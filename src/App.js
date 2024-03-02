@@ -6,6 +6,7 @@ import {
 	Text,
 	Image,
 	View,
+	NativeModules,
 	TextInput,
 	Platform,
 } from "react-native";
@@ -35,7 +36,7 @@ Text.render = function render(props, ref) {
 
 Text.defaultProps = Object.assign({}, Text.defaultProps, { allowFontScaling: false })
 TextInput.defaultProps = Object.assign({}, TextInput.defaultProps, { allowFontScaling: false })
-
+const { Openinstall } = NativeModules
 
 class App extends Component {
 	constructor() {
@@ -48,6 +49,14 @@ class App extends Component {
 	componentDidMount() {
 		CodePush.checkForUpdate('codepushkey').then(update => {})
 		SplashScreen.hide()
+
+		setTimeout(() => {
+			if (Openinstall.getAffCode) {
+				Openinstall.getAffCode(CODE => {
+					alert('CODE=>' + CODE)
+				});
+			}
+		}, 5000);
 	}
 
 
