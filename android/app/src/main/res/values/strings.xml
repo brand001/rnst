@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">P1M1ST</string>
+    <string name="app_name">rnst</string>
     <string moduleConfig="true" name="CodePushDeploymentKey">viNs1bZv59kDCPPzKWyrRc2hhYsPc3gQwJ8gd</string>
     <string name="agreement_title">隐私政策授权</string>
     <string name="agreement_msg">隐私政策说明…</string>
