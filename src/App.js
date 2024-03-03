@@ -86,3 +86,10 @@ class App extends Component {
 
 const codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 export default CodePush(codePushOptions)(Sentry.wrap(App));
+
+
+// # 构建项目并生成.xcarchive文件
+// xcodebuild -workspace FedevProject.xcworkspace -scheme FedevProject -sdk iphoneos -configuration Release clean archive -archivePath build/FedevProject.xcarchive
+
+// # 导出.ipa文件
+// xcodebuild -exportArchive -archivePath build/FedevProject.xcarchive -exportOptionsPlist exportOptions.plist -exportPath build/FedevProject.ipa
