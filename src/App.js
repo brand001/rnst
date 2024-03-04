@@ -53,7 +53,7 @@ class App extends Component {
 		setTimeout(() => {
 			if (Openinstall.getAffCode) {
 				Openinstall.getAffCode(CODE => {
-					alert('CODE=>' + CODE)
+					alert('CODE1=>' + CODE)
 				});
 			}
 		}, 5000);
