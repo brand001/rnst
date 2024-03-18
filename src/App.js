@@ -87,6 +87,8 @@ class App extends Component {
 const codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 export default CodePush(codePushOptions)(Sentry.wrap(App));
 
+// https://github.com/brand001/rnst.git
+
 // fa7d81eee03141269cc7464f7db8fb13
 // sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
 
