@@ -88,8 +88,26 @@ const codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 export default CodePush(codePushOptions)(Sentry.wrap(App));
 
 
+// https://cloudmiicorph011-my.sharepoint.com/:u:/g/personal/benji_lai_ogglobal_net/EcshWuqvT5JCoh-_doMpwxoBj8KIlzIb1D9Fsxq3BfS2vg?e=j5EqfQ
+
+
+// npm i --legacy-peer-deps
+// # android/app/src/main/java/com/TestST/soexample/opeinstall.java
+// sed -i "" "s/TAG\ =\ \"\"/TAG\ =\ \"${ope_install_tag}\"/g" android/app/src/main/java/com/TestST/soexample/opeinstall.java
+// # 查看opeinstall.java内容是否被替换
+// cat android/app/src/main/java/com/TestST/soexample/opeinstall.java
+// cd android && ./gradlew assembleRelease
+// mv app/build/outputs/apk/release/app-release.apk ./
+// cd ..
+
+// cd ios
+// pod install
+// sed -i "" "6s/<string><\/string>/<string>"${info_plist_string_line_six}"<\/string>/" FedevProject/Info.plist
+// sed -i "" "s/unary_function/__unary_function/" Pods/boost/boost/container_hash/hash.hpp
+// cat FedevProject/Info.plist
 // # 构建项目并生成.xcarchive文件
 // xcodebuild -workspace FedevProject.xcworkspace -scheme FedevProject -sdk iphoneos -configuration Release clean archive -archivePath build/FedevProject.xcarchive
 
 // # 导出.ipa文件
 // xcodebuild -exportArchive -archivePath build/FedevProject.xcarchive -exportOptionsPlist exportOptions.plist -exportPath build/FedevProject.ipa
+
