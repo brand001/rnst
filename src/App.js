@@ -87,6 +87,7 @@ class App extends Component {
 const codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 export default CodePush(codePushOptions)(Sentry.wrap(App));
 
+// fa7d81eee03141269cc7464f7db8fb13
 // sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
 
 // https://cloudmiicorph011-my.sharepoint.com/:u:/g/personal/benji_lai_ogglobal_net/EV0yxDtJjLhDsvFxb8yqHgABAf-weMtioVCXVssYk9TwDw?e=eWd2Pp
