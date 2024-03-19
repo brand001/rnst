@@ -115,3 +115,5 @@ export default CodePush(codePushOptions)(Sentry.wrap(App));
 // # 导出.ipa文件
 // xcodebuild -exportArchive -archivePath build/FedevProject.xcarchive -exportOptionsPlist exportOptions.plist -exportPath build/FedevProject.ipa
 
+// ./gradlew clean
+// npm cache clean --force
